@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3FDE8;
+    font-family: 'Young Serif', serif;
+}
+
+h1{
+    text-align: center;
+    color: #a8df8ebc;
+    font-size: 5rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+li{
+    border: 1px solid #ffd4d4;
+    border-radius: 0.3rem;
+    margin-top: 0.1rem;
+    height: 3rem;
+    background-color: #FFE5E5;
+    font-size: 1.09rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+
+.task-adder {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write-task{
+      min-width: 18rem;
+      height: 2.2rem;
+      border-radius:0.3rem 0 0 0.3rem;
+      border: 1px solid rgb(225, 225, 225);
+}
+
+.write-task:focus{
+    outline: 1px solid rgb(95, 218, 118);
+}
+
+.add-task{
+    width: 3rem;
+    height: 2.2rem;
+    border-radius:0 0.3rem 0.3rem 0;
+    border: 1px solid rgb(225, 225, 225);
+    background-color: #78d84c;
+}
+
+.add-task:hover{
+    background-color: #8ad667;
+    font-size:101%;
+    cursor: pointer;
+    border: 1px solid #43d200;
+}
+
+.add-task:active{
+    background-color: #6aae4b;
+    font-size:80%;
+}
+
+.todos{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+li p{
+    flex-basis: 80%;
+}
+
+.task-buttons{
+    flex-basis: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.task-buttons .done , .task-buttons .delete{
+    flex-basis: 50%;
+    max-width: 3rem;
+    height: 100%;
+    border: none;
+}
+
+.task-buttons .done {
+    height: 100%;
+    background-color: #bee2af;
+}
+.task-buttons .done:hover{
+    background-color: #cdf3bc;
+    cursor: pointer;
+}
+.task-buttons .done:active {
+    background-color: #b1e39b;
+}
+.task-buttons .delete{
+    height: 100%;
+    border-radius: 0 0.3rem 0.3rem 0;
+    background-color: rgb(255, 174, 174);
+}
+.task-buttons .delete:hover{
+    background-color: rgb(253, 186, 186);
+    cursor: pointer;
+}
+.task-buttons .delete:active{
+    background-color: rgb(255, 152, 152);
+}
+
+.task-completed {
+    background-color: rgba(167, 167, 167, 0.229);
+    text-decoration:line-through;
+    color: grey;
+}
+
+.error-text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: small;
+    color: rgb(255, 97, 97);
+}
